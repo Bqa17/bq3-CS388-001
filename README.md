@@ -2,9 +2,9 @@
 
 Course Link: [CodePath Android Course](https://courses.codepath.org/courses/and102/unit/1#!labs)
 
-Submitted by: **Your Name Here** <!-- Replace 'Your Name Here' with your actual name -->
+Submitted by: Bruno Quinones
 
-**Tap Counter App** is an Android app inspired by idle tap games, allowing users to accumulate points through taps, which can be exchanged for upgrades.
+Tap Counter is an Android app inspired by idle tap games, allowing users to accumulate points through taps, which can be exchanged for upgrades.
 
 Time spent: **X** hours spent in total <!-- Replace 'X' with the number of hours you spent on this project -->
 
@@ -33,11 +33,11 @@ The following **optional** features are implemented:
 
 ## Notes
 
-Describe any challenges encountered while building the app. <!-- Replace this with your specific challenges and experiences -->
+I didn't encounter any challenges since the tutorial for the lab is very intuitive.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2024 Bruno Quinones
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
