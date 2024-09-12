@@ -23,7 +23,7 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 - [ ] User can exchange number of taps accumulated for upgrades (e.g., each tap counts as 2 taps).
-    - ![GIF showing the upgrade process](Lab1_imges/3.gif)
+    - ![GIF showing the upgrade process](Lab1_images/3.gif)
 
 - [ ] User can customize the app's theme (e.g., using a dog background and a paw print button).
     - ![GIF showing theme customization](Lab1_images/4.png) <!-- Replace this link with your actual image/GIF link -->
