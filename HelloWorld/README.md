@@ -4,7 +4,7 @@ Submitted by: Bruno Quinones
 
 Hello World is an android app that shows an image and introductory message, and allows pressing a button to display a Toast. 
 
-Time spent: **2** hours spent in total
+Time spent: 2 hours spent in total
 
 ## Required Features
 
@@ -22,7 +22,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='../images_hw/1.gif' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
