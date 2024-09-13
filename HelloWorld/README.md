@@ -25,15 +25,12 @@ Here's a walkthrough of implemented features:
 <img src='../images_hw/1.gif' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with ScreenToGif
+
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I had some difficulties pushing the project to git, but I was able to fix them.
 
 ## License
 
