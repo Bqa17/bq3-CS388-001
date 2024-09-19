@@ -19,7 +19,7 @@ The following **required** functionality is completed:
     - Sender
     - Email title
     - Email summary
-  - ![Image/GIF showing the basic email list display](Lab2_gif/1.gif) <!-- Replace this link with your actual image/GIF link -->
+  - ![Image/GIF showing the basic email list display](../Lab2_gif/1.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ### Stretch Features
 
