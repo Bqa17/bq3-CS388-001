@@ -12,10 +12,10 @@ Time spent: **X** hours spent in total <!-- Replace 'X' with the number of hours
 
 The following **required** functionality is completed:
 
-- [ ] **User can see a number displayed on the screen. The number starts at 0.**
+- [x] **User can see a number displayed on the screen. The number starts at 0.**
     - ![Image/GIF showing the initial display of the number](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
-- [ ] **User can tap on a button to see the number displayed increase by 1.**
+- [x] **User can tap on a button to see the number displayed increase by 1.**
     - ![Image/GIF showing the number increase on button tap](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ## Stretch Features
