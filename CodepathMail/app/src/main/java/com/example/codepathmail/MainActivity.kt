@@ -37,5 +37,6 @@ class MainActivity : AppCompatActivity() {
             // Notify the adapter there's new emails so the RecyclerView layout is updated
             adapter.notifyDataSetChanged()
         }
+
     }
 }
