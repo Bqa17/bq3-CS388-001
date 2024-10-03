@@ -17,6 +17,7 @@ import com.example.moviesproject.R.*
 
 import com.google.gson.Gson
 import okhttp3.Headers
+import org.json.JSONArray
 import org.json.JSONObject
 
 // --------------------------------//
@@ -45,9 +46,8 @@ class MoviesFragment : Fragment(){
         val recyclerView = view.findViewById<RecyclerView>(R.id.list)
 
         // Set the layout manager for the RecyclerView (using LinearLayoutManager)
-        recyclerView.layoutManager = GridLayoutManager(view.context, 2)
-        recyclerView.adapter = MovieRecycleViewAdapter(emptyList())
-
+        recyclerView.layoutManager = GridLayoutManager(view.context, 1)
+        //recyclerView.adapter = MovieRecycleViewAdapter(emptyList())
         // Call the method to update the adapter
         updateAdapter(progressBar, recyclerView)
 
@@ -70,7 +70,7 @@ class MoviesFragment : Fragment(){
 
         client[
             "https://api.themoviedb.org/3/movie/now_playing?&api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed",
-            params,
+//            params,
             object : JsonHttpResponseHandler() {
                 /*
                  * The onSuccess function gets called when
@@ -83,12 +83,11 @@ class MoviesFragment : Fragment(){
                 ) {
                     // The wait for a response is over
                     progressBar.hide()
-
-                    val resultsJSON: JSONObject = json.jsonObject.get("results") as JSONObject
-                    val moviesRawJSON: String = resultsJSON.get("movies").toString()
+                    val resultsJSON: JSONArray = json.jsonObject.get("results") as JSONArray
+                    val moviesRawJSON: String = resultsJSON.toString()
+                    //val moviesRawJSON: String = resultsJSON.get("id").toString()
                     val gson = Gson()
-                    val arrayMovieType =
-                        object : com.google.gson.reflect.TypeToken<List<Movie>>() {}.type
+                    val arrayMovieType = object : com.google.gson.reflect.TypeToken<List<Movie>>() {}.type
 
                     //TODO - Parse JSON into Models
                     val models: List<Movie> = gson.fromJson(moviesRawJSON, arrayMovieType)

@@ -38,16 +38,15 @@ class MovieRecycleViewAdapter(
      */
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         val movie = movies[position]
-
         holder.mMovieTitle.text = movie.title
         holder.mMovieDescription.text = movie.description
-
         // Prepend the base URL for the poster image
         val imageUrl = "https://image.tmdb.org/t/p/w500/" + movie.posterImageUrl
         Glide.with(holder.mView)
             .load(imageUrl)
             .centerInside()
             .into(holder.mMoviePoster)
+        position
     }
 
     /**
