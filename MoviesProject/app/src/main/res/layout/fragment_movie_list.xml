@@ -5,12 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Movie App"
+        app:titleTextColor="@color/white"
+        />
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
         android:name="ph"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="LinearLayoutManager"
+        android:layout_marginTop="65dp"
         tools:context=".MovieFragment"
         tools:listitem="@layout/fragment_movie" />
 
