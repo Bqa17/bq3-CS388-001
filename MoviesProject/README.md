@@ -32,6 +32,7 @@ Here's a walkthrough of implemented user stories:
 
 ![Video Walkthrough](https://i.imgur.com/B1Ygep8.gif)
 
+
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif  
 <!-- Recommended tools:
