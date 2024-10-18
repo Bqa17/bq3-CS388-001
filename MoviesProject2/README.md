@@ -2,9 +2,9 @@
 
 Submitted by: **Bruno Quinones**
 
-**Name of your app** is a movie browsing app that allows users to browse ... [TODO] 
+**Best Movie** is a movie browsing app that allows users to browse the top-rated movies of all time, and gives you details like the synopsis, original language, rating, and release date. 
 
-Time spent: **X** hours spent in total
+Time spent: **9** hours spent in total
 
 ## Required Features
 
@@ -31,7 +31,6 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 ![Video Walkthrough](https://github.com/user-attachments/assets/0bd6de97-8f16-443e-866a-21eb7f9be7b5)
 
 
