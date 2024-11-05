@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/entry_title"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/entry_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
