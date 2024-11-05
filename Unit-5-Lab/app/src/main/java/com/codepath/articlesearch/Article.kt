@@ -1,7 +1,9 @@
 package com.codepath.articlesearch
+
 import android.support.annotation.Keep
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+
 
 @Keep
 @Serializable
@@ -32,6 +34,11 @@ data class Article(
     val mediaImageUrl = "https://www.nytimes.com/${multimedia?.firstOrNull { it.url != null }?.url ?: ""}"
 }
 
+// This will use the first media in the array,
+// if it's available (by checking using firstOrNull),
+// and parse through the MultiMedia to get the url for the image.
+// If it is not available, it will set an empty string for the mediaImageUrl.
+
 @Keep
 @Serializable
 data class HeadLine(
@@ -39,12 +46,14 @@ data class HeadLine(
     val main: String
 ) : java.io.Serializable
 
+
 @Keep
 @Serializable
 data class Byline(
     @SerialName("original")
-    val original: String? = null
+    val original : String? = null
 ) : java.io.Serializable
+
 
 @Keep
 @Serializable
@@ -52,4 +61,3 @@ data class MultiMedia(
     @SerialName("url")
     val url: String?
 ) : java.io.Serializable
-

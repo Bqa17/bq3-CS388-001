@@ -9,19 +9,18 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-
+import missing.namespace.R
 
 const val ARTICLE_EXTRA = "ARTICLE_EXTRA"
 private const val TAG = "ArticleAdapter"
 
-class ArticleAdapter(private val context: Context, private val articles: List<Article>) :
+class ArticleAdapter(private val context: Context, private val articles: List<DisplayArticle>) :
     RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_article, parent, false)
         return ViewHolder(view)
     }
-
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val article = articles[position]
@@ -37,12 +36,9 @@ class ArticleAdapter(private val context: Context, private val articles: List<Ar
         private val titleTextView = itemView.findViewById<TextView>(R.id.mediaTitle)
         private val abstractTextView = itemView.findViewById<TextView>(R.id.mediaAbstract)
 
-        init {
-            itemView.setOnClickListener(this)
-        }
-
-        fun bind(article: Article) {
-            titleTextView.text = article.headline?.main
+        fun bind(article: DisplayArticle)
+        {
+            titleTextView.text = article.headline
             abstractTextView.text = article.abstract
 
             Glide.with(context)
@@ -50,15 +46,22 @@ class ArticleAdapter(private val context: Context, private val articles: List<Ar
                 .into(mediaImageView)
         }
 
+        init {
+            itemView.setOnClickListener(this)
+        }
 
         override fun onClick(v: View?) {
             // TODO: Get selected article
+            // Get selected article
             val article = articles[absoluteAdapterPosition]
 
-            // TODO: Navigate to Details screen and pass selected article
+            //  TODO: Navigate to Details screen and pass selected article
             val intent = Intent(context, DetailActivity::class.java)
             intent.putExtra(ARTICLE_EXTRA, article)
             context.startActivity(intent)
         }
     }
+
+
+
 }
