@@ -1,52 +1,52 @@
-# Lab 4: Article Search
+# Android Project 5 - *Name of App Here*
 
-Course Link: [CodePath Android Course](https://courses.codepath.org/courses/and102/unit/4#!labs)
+Submitted by: **Bruno Quinones**
 
-Submitted by: **Bruno Quinones** <!-- Replace 'Your Name Here' with your actual name -->
+**Bitfit Diary** is a health metrics app that allows users to track diary entries
 
-**Article Search** is an app designed to display the most recent articles from the NY Times.
+Time spent: **2** hours spent in total
 
-Time spent: **5** hours spent in total <!-- Replace 'X' with the number of hours you spent on this project -->
-
-## Application Features
-
-### Required Features
+## Required Features
 
 The following **required** functionality is completed:
 
-- [x] (3 pts) **Articles are displayed using the RecyclerView.**
-  - ![Image/GIF showing RecyclerView implementation](https://github.com/user-attachments/assets/d6543b2e-d767-4634-aea7-c4c6efa5bbf6)
-<!-- Replace this link with your actual image/GIF link -->
+- [x] **At least one health metric is tracked (based on user input)**
+  - Chosen metric(s): `[Diary Entry]`
+- [x] **There is a "create entry" UI that prompts users to make their daily entry**
+- [x] **New entries are saved in a database and then updated in the RecyclerView**
+- [x] **On application restart, previously entered entries are preserved (i.e., are *persistent*)**
+ 
+The following **optional** features are implemented:
 
-- [x] (4 pts) **Can navigate to the Article Details screen.**
-  - ![Image/GIF showing Article Details screen](https://github.com/user-attachments/assets/fe8981b3-2e39-4195-b3b3-b4155a4eed3a)
- <!-- Replace this link with your actual image/GIF link -->
+- [ ] **Create a UI for tracking averages and trends in metrics**
+- [ ] **Improve and customize the user interface through styling and coloring**
+- [ ] **Implement orientation responsivity**
+- [ ] **Add a daily photo feature**
 
-- [x] (3 pts) **Article images are downloaded and displayed using Glide.**
-  - ![Image/GIF showing Glide usage](https://github.com/user-attachments/assets/fe8981b3-2e39-4195-b3b3-b4155a4eed3a) <!-- Replace this link with your actual image/GIF link -->
+The following **additional** features are implemented:
 
-### Stretch Features
+- [ ] List anything else that you can get done to improve the app functionality!
 
-The following **stretch** functionality is implemented:
+## Video Walkthrough
 
-- [x] (+2 pts bonus) **Enhanced the UI for the application with customized fonts and ConstraintLayout for each of the screens.**
-  - ![Image/GIF showing custom UI styling](https://github.com/user-attachments/assets/cafe35c6-dcc0-48ea-a853-11badbd95a14)
- <!-- Replace this link with your actual image/GIF link -->
+Here's a walkthrough of implemented user stories:
+
+![Project5](https://github.com/user-attachments/assets/c5ecbcd2-c8a7-4382-ac77-6cf628ac6e0b)
+
+
+<!-- Replace this with whatever GIF tool you used! -->
+GIF created with ...  
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
 
-I had a problem where android studio would get stuck on "Launching on devices", I was able to fix it by deleting the device I was running and creating a new one. <!-- Replace this with your specific challenges and experiences -->
-
-## Resources
-
-- [Using Intents to Create Flows](https://guides.codepath.org/android/Using-Intents-to-Create-Flows)
-- [AsyncHTTPClient](https://guides.codepath.org/android/Using-CodePath-Async-Http-Client)
-- [GridLayoutManager](https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/GridLayoutManager)
-- [GridView in Android](https://www.geeksforgeeks.org/gridview-in-android-with-example/)
+I had some trouble setting up the database but that was it, it was pretty easy to fix
 
 ## License
 
-```plaintext
     Copyright [2024] [Bruno Quinones]
 
     Licensed under the Apache License, Version 2.0 (the "License");
